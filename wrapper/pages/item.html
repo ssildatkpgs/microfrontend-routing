@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Item - Microfrontend</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/item.css">
+</head>
+<body>
+  <div class="item">
+    <div class="item__section">
+      <div class="header">
+        <h1 class="header__title">Microfrontend Wrapper</h1>
+        <ul class="header__menu">
+          <li class="header__menuItem"><a class="header__link" href="/">Home</a></li>
+          <li class="header__menuItem"><a class="header__link" href="/list">List</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item__section">
+      <div class="item__details">
+        <h3>Widok szczegółów</h3>
+        <angular-item id="angular-item"></angular-item>
+        <react-hits id="react-hits"
+                    hits="135"></react-hits>
+        <react-comments id="react-comments"
+                        styleobject='{"backgroundColor": "#9073db", "color": "#fff"}'>
+        </react-comments>
+      </div>
+    </div>
+    <div class="item__section">
+      <div class="angular">
+        <h3>Zobacz też pozostałe wpisy</h3>
+        <angular-list id="angular-list">
+          <p class="angular__footer">Wygenerowano za pomocą Angular 9.1.0</p>
+        </angular-list>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/item.js"></script>
+  <!-- zone.js is required by Angular. It’s good practice to include this once in the wrapper application
+       as you cannot have multiple versions on the same page -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.9.1/zone.min.js"></script>
+  <!-- gives us Custom Element support inside our browser -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/custom-elements-es5-adapter.js"></script>
+  <!-- Angular component: angular-item in one file -->
+  <script src="http://localhost:5004/main.js"></script>
+  <!-- Angular component: angular-list in one file -->
+  <script src="http://localhost:5003/main.js"></script>
+  <!-- React component: react-hits in one file -->
+  <script src="http://localhost:5005/main.js"></script>
+  <!-- React component: react-comments in one file -->
+  <script src="http://localhost:5006/main.js"></script>
+</body>
+</html>

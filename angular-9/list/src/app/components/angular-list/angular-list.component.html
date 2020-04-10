@@ -1,0 +1,15 @@
+<div class="angularListComponent">
+  <div *ngFor="let item of imagesArray"
+       class="angularListComponent__container">
+    <img class="angularListComponent__itemImage"
+         src="{{ item.url }}"
+         alt="Image {{ item.id }}">
+    <h3 class="angularListComponent__itemTitle">{{ item.title }}</h3>
+    <p class="angularListComponent__itemDesc">{{ item.desc }}</p>
+    <p class="angularListComponent__more">
+      <a class="angularListComponent__moreLink"
+        href="/list/{{ item.id }}">Zobacz więcej</a>
+    </p>
+  </div>
+  <ng-content></ng-content>
+</div>

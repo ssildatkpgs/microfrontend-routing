@@ -1,0 +1,37 @@
+.angularListComponent {
+  margin-top: 25px;
+}
+
+.angularListComponent__container {
+  overflow: hidden;
+  clear: both;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.angularListComponent__itemImage {
+  float: left;
+  margin: 0 15px 15px 0;
+  width: 320px;
+}
+
+.angularListComponent__more {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.angularListComponent__moreLink {
+  float: right;
+  background-color: #808000;
+  color: #eee;
+  font-size: 14px;
+  line-height: 36px;
+  padding: 0 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.angularListComponent__moreLink:hover {
+  opacity: 0.9;
+}

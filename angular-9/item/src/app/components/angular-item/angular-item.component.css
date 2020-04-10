@@ -1,0 +1,17 @@
+.angularItemComponent__itemTitle {
+  background-color: #b22222;
+  padding: 0 15px;
+  font-size: 22px;
+  line-height: 2;
+  color: #eee;
+  margin-top: 15px;
+}
+
+.angularItemComponent__itemImage {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.angularItemComponent__itemDesc {
+  margin-bottom: 25px;
+}

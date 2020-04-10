@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Home - Microfrontend</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+  <div class="home">
+    <div class="home__section">
+      <div class="header">
+        <h1 class="header__title">Microfrontend Wrapper</h1>
+        <ul class="header__menu">
+          <li class="header__menuItem"><a class="header__link" href="/">Home</a></li>
+          <li class="header__menuItem"><a class="header__link" href="/list">List</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="home__section">
+      <div class="native">
+        <h3>Native JS</h3>
+        <input type="text" id="message">
+        <button id="message-button">Wyślij do komponentów</button>
+      </div>
+    </div>
+
+    <div class="home__section home__section--inline">
+      <div class="angular">
+        <h3>Angular</h3>
+        <angular-button
+          id="angular-button"
+          message="To jest button Angular"
+          styleobject='{"backgroundColor": "#b22222", "color": "#fefefe"}'
+        >
+          <p class="angular__footer">Wygenerowano za pomocą Angular 9.1.0</p>
+        </angular-button>
+      </div>
+    </div>
+
+    <div class="home__section  home__section--inline">
+      <div class="react">
+        <h3>React</h3>
+        <react-button
+          id="react-button"
+          message="To jest button React"
+          styleobject='{"backgroundColor": "#9073db", "color": "#fff"}'
+        >
+          <p class="react__footer">Wygenerowano za pomocą React 16.13.1</p>
+        </react-button>
+      </div>
+    </div>
+
+    <div class="home__section home__section--afterInline">
+      <div class="history">
+        <h3>Historia</h3>
+        <div id="history-box"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/home.js"></script>
+  <!-- zone.js is required by Angular. It’s good practice to include this once in the wrapper application
+       as you cannot have multiple versions on the same page -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.9.1/zone.min.js"></script>
+  <!-- gives us Custom Element support inside our browser -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/custom-elements-es5-adapter.js"></script>
+  <!-- Angular component: angular-button in one file -->
+  <script src="http://localhost:5001/main.js"></script>
+  <!-- React component: react-button in one file -->
+  <script src="http://localhost:5002/main.js"></script>
+</body>
+</html>

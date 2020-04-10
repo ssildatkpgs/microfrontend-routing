@@ -1,0 +1,7 @@
+<div class="angularButtonComponent">
+  <p>Wiadomość: <strong>{{ message }}</strong></p>
+  <button (click)="onClickButton()"
+          class="angularButtonComponent__button"
+          [style]="styleObjectParsed">Angular button</button>
+  <ng-content></ng-content>
+</div>

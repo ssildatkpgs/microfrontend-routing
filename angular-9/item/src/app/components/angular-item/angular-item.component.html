@@ -1,0 +1,10 @@
+<div class="angularItemComponent">
+  <div class="angularItemComponent__container">
+    <h3 class="angularItemComponent__itemTitle">:: {{ itemDetails.title }}</h3>
+    <img class="angularItemComponent__itemImage"
+         src="{{ itemDetails.url }}"
+         alt="Image {{ itemDetails.id }}">
+    <p class="angularItemComponent__itemDesc">{{ itemDetails.desc }}</p>
+  </div>
+  <ng-content></ng-content>
+</div>

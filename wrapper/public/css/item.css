@@ -1,0 +1,78 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h3, p {
+  margin: 0 0 10px;
+}
+
+input {
+  line-height: 32px;
+  padding: 0 10px;
+}
+
+button {
+  border: 0;
+  background-color: #808000;
+  color: #eee;
+  padding: 0 15px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.item__section {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.header {
+  overflow: hidden;
+  clear: both;
+}
+
+.header__title {
+  float: left;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.header__menu {
+  float: right;
+  margin: 6px 0;
+}
+
+.header__menuItem {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.header__link {
+  background-color: #808000;
+  color: #eee;
+  font-size: 14px;
+  line-height: 36px;
+  padding: 0 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  opacity: 0.9;
+}
+
+.angular {
+  border-bottom: 1px solid #ccc;
+}
+
+.angular__footer,
+.react__footer {
+  font-size: 11px;
+}
