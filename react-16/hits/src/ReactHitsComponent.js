@@ -8,7 +8,7 @@ export class ReactHitsComponent extends React.Component {
   }
 
   static defaultProps = {
-    hits: '0'
+    hits: 0
   }
 
   render() {
@@ -16,7 +16,9 @@ export class ReactHitsComponent extends React.Component {
 
     return (
       <div className="reactHitsComponent">
-        <p className="reactHitsComponent__info">Liczba wyświetleń: <strong>{hits}</strong></p>
+        <p className="reactHitsComponent__info">
+          Liczba wyświetleń: <strong>{hits}</strong>
+        </p>
         {this.props.children}
       </div>
     )
