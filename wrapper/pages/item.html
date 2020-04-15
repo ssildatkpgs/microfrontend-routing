@@ -13,8 +13,8 @@
       <div class="header">
         <h1 class="header__title">Microfrontend Wrapper</h1>
         <ul class="header__menu">
-          <li class="header__menuItem"><a class="header__link" href="/">Home</a></li>
-          <li class="header__menuItem"><a class="header__link" href="/list">List</a></li>
+          <li class="header__menuItem"><a class="header__link" href="/">Start</a></li>
+          <li class="header__menuItem"><a class="header__link" href="/lista">Lista</a></li>
         </ul>
       </div>
     </div>
@@ -36,7 +36,8 @@
     <div class="item__section">
       <div class="angular">
         <h3>Zobacz też pozostałe wpisy</h3>
-        <angular-list id="angular-list">
+        <angular-list id="angular-list"
+                      mainurl="lista">
           <p class="angular__footer">Wygenerowano za pomocą Angular 9.1.0</p>
         </angular-list>
       </div>
@@ -50,12 +51,12 @@
   <!-- gives us Custom Element support inside our browser -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/custom-elements-es5-adapter.js"></script>
   <!-- Angular component: angular-item in one file -->
-  <script src="http://localhost:5004/main.js"></script>
+  <script src="http://localhost:5004/angularItemComponent.js"></script>
   <!-- Angular component: angular-list in one file -->
-  <script src="http://localhost:5003/main.js"></script>
+  <script src="http://localhost:5003/angularListComponent.js"></script>
   <!-- React component: react-hits in one file -->
-  <script src="http://localhost:5005/main.js"></script>
+  <script src="http://localhost:5005/reactHitsComponent.js"></script>
   <!-- React component: react-comments in one file -->
-  <script src="http://localhost:5006/main.js"></script>
+  <script src="http://localhost:5006/reactCommentsComponent.js"></script>
 </body>
 </html>

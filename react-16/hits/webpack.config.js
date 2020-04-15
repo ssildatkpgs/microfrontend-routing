@@ -3,7 +3,7 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     publicPath: '/',
-    filename: 'main.js'
+    filename: 'reactHitsComponent.js'
   },
   devServer: {
     contentBase: './dist',

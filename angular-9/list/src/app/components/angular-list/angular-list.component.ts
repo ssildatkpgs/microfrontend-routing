@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AngularListComponent implements OnInit {
   @Input() activeid: string;
+  @Input() mainurl: string = 'list';
   imagesArray: Array<{ id: string, title: string, url: string, desc: string}>;
 
   constructor(private http: HttpClient) { }

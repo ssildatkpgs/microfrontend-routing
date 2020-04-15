@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run build && serve -l 5004 dist/angular",
+    "start": "npm run build && npm run move && serve -l 5004 dist/angular",
     "build": "ng build --prod --output-hashing none --single-bundle true",
+    "move": "move dist\\angular\\main.js dist\\angular\\angularItemComponent.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

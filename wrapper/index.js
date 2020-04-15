@@ -10,13 +10,13 @@ router.get('/', (req, res) => {
   });
 });
 
-router.get('/list', (req, res) => {
+router.get('/lista', (req, res) => {
   res.sendFile('list.html', {
     root: 'pages'
   });
 });
 
-router.get('/list/:id', (req, res) => {
+router.get('/lista/:id', (req, res) => {
   res.sendFile('item.html', {
     root: 'pages'
   });

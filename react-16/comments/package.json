@@ -11,8 +11,10 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "npm run build && serve -l 5006 dist",
+    "start": "npm run prod && serve -l 5006 dist",
+    "start-dev": "npm run build && serve -l 5006 dist",
     "build": "webpack --mode development",
+    "prod": "webpack --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
