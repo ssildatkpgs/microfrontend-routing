@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8">
-  <title>List - Microfrontend</title>
+  <title>Lista - Microfrontend</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/list.css">
@@ -34,8 +34,11 @@
   <!-- zone.js is required by Angular. It’s good practice to include this once in the wrapper application
        as you cannot have multiple versions on the same page -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.9.1/zone.min.js"></script>
+
   <!-- gives us Custom Element support inside our browser -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/custom-elements-es5-adapter.js"></script>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js"></script>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js"></script>
+
   <!-- Angular component: angular-list in one file -->
   <script src="http://localhost:5003/angularListComponent.js"></script>
 </body>

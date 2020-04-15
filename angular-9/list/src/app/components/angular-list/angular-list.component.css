@@ -21,6 +21,10 @@
   width: 320px;
 }
 
+.angularListComponent__itemDesc {
+  line-height: 1.375;
+}
+
 .angularListComponent__more {
   text-align: right;
   margin-top: 20px;

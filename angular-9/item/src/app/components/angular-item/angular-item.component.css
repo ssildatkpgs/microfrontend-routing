@@ -13,5 +13,6 @@
 }
 
 .angularItemComponent__itemDesc {
-  margin-bottom: 25px;
+  line-height: 1.375;
+  margin-bottom: 15px;
 }
